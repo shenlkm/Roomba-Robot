@@ -1,24 +1,18 @@
 package com.marin.mauricio;
 
 
-import com.google.gson.Gson;
 import com.marin.mauricio.repository.DataRepository;
 import com.marin.mauricio.repository.DataRepositoryFileImpl;
+import com.marin.mauricio.repository.data.Instruction;
 import com.marin.mauricio.repository.data.Point;
 import com.marin.mauricio.repository.data.Position;
 import com.marin.mauricio.repository.data.Result;
-import javafx.geometry.Pos;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import com.marin.mauricio.repository.data.Instruction;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 

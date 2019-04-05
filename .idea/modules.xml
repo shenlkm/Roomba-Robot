@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Roomba_Robot.iml" filepath="$PROJECT_DIR$/.idea/modules/Roomba_Robot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Roomba_Robot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Roomba_Robot.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Roomba_Robot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Roomba_Robot.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Roomba-Robot.iml" filepath="$PROJECT_DIR$/.idea/modules/Roomba-Robot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Roomba-Robot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Roomba-Robot.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Roomba-Robot.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Roomba-Robot.test.iml" />
     </modules>
   </component>
 </project>

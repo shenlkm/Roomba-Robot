@@ -1,14 +1,9 @@
 package com.marin.mauricio;
 
-import com.google.gson.Gson;
 import com.marin.mauricio.repository.DataRepository;
 import com.marin.mauricio.repository.DataRepositoryFileImpl;
 import com.marin.mauricio.repository.data.Instruction;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

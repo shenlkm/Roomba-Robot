@@ -166,7 +166,7 @@ public class Robot {
     }
 
     private boolean isObstacle(int x, int y){
-        if(y <= limitOnY && x <= limitOnX){
+        if(y < limitOnY && y >= Constants.LOWER_LIMIT && x < limitOnX  && x >= Constants.LOWER_LIMIT){
             String cell = map.get(y)[x];
             return Constants.EMPTY_CELL.equals(cell) || Constants.CLEAN_CELL.equals(cell);
         }
@@ -174,8 +174,10 @@ public class Robot {
     }
 
     private void backOffStrategy() {
-        BOSIteration++;
-        execute(BOSCommands.get(BOSIteration -1));
+        if(BOSIteration < BOSCommands.size()){
+            BOSIteration++;
+            execute(BOSCommands.get(BOSIteration -1));
+        }
     }
 
     private String getNewFacing(String command) {

@@ -47,6 +47,14 @@ public class Robot {
         return result;
     }
 
+    public Position getCurrentPosition() {
+        return currentPosition;
+    }
+
+    public int getBattery() {
+        return battery;
+    }
+
     private void setUpBOS(List<List<String>> bossStrategy) {
         BOSIteration = 0;
         BOSCommands = bossStrategy;
@@ -63,7 +71,7 @@ public class Robot {
         result.getVisited().add(currentPosition.getPoint());
     }
 
-    private void execute(List<String> commandList){
+    public void execute(List<String> commandList){
         int index = 0;
         while (index < commandList.size() && battery >= Constants.BATTERY_USAGE.get(commandList.get(index))){
             executeCommand(commandList.get(index));
@@ -71,7 +79,7 @@ public class Robot {
         }
     }
 
-    private void executeCommand(@NotNull String command)
+    public void executeCommand(@NotNull String command)
     {
         switch (command){
             case Constants.TURN_RIGTH:

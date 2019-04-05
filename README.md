@@ -25,6 +25,6 @@ You can find the `.Jar` file in the folder `build\libs` with the name `Roomba-ro
    - **commands** is the list of command the robot will follow up where:
      - `{TL: turn left, TR: turn right, A: advance, C: clean}` 
    - **battery** is the amount of battery remaining in the robot.  
-2. In order to run this project in the terminal `$java -jar "Roomba-robot.jar" <source.json> <result.json>` where:
+2. In order to run this project, write in the terminal `$java -jar "Roomba-robot.jar" <source.json> <result.json>` where:
    - `<source.json>` is the file with the structure above
    - `<result.json>` is the file where the final state of the robot will be written.

@@ -7,10 +7,10 @@ This project is write in Java and build by gradle, so you need at least to have 
 - [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or higher
 - [gradle 3.4 or higher](https://gradle.org/releases/)
 
-### Download
+## Setup
 Clone or download the project from github
 
-## Build the project
+### Build the project
 Once you have the project. Open your preferred command line tool make sure locate in the root folder of the project.  
 Then write: `gradle build` and press enter. 
 After finish, you should see a `BUILD SUCCESSFUL` message on the terminal.  

@@ -1,17 +1,17 @@
 # Roomba-Robot
 A Roomba robot that clean a space following a command sequence
 
-## Prerequisites
+## Prerequisites.
 This project is write in Java and build by gradle, so you need at least to have them installed
 
 - [Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or higher
 - [gradle 3.4 or higher](https://gradle.org/releases/)
 
-## Setup
+## Setup.
 Clone or download the project from github
 
-### Build the project
-Once you have the project. Open your preferred command line tool make sure locate in the root folder of the project.  
+### Build the project.
+Once you have the project. Open your preferred command line tool and make sure you're located in the root folder of the project.  
 Then write: `gradle build` and press enter. 
 After finish, you should see a `BUILD SUCCESSFUL` message on the terminal.  
 When build finish the artifact and the coverage report are created.
@@ -28,3 +28,6 @@ You can find the `.Jar` file in the folder `build\libs` with the name `Roomba-ro
 2. In order to run this project, write in the terminal `$java -jar "Roomba-robot.jar" <source.json> <result.json>` where:
    - `<source.json>` is the file with the structure above
    - `<result.json>` is the file where the final state of the robot will be written.
+   
+   ### Coverage report.
+   - After build the project you can read the coverage report opening this file `build\coverageJacocoReportDir\test\html\index.html`

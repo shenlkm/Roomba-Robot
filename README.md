@@ -30,4 +30,4 @@ You can find the `.Jar` file in the folder `build\libs` with the name `Roomba-ro
    - `<result.json>` is the file where the final state of the robot will be written.
    
    ### Coverage report.
-   - After build the project you can read the coverage report opening this file `build\coverageJacocoReportDir\test\html\index.html`
+   - after building the project you can read the coverage report opening the following file `build\coverageJacocoReportDir\test\html\index.html`

@@ -1,6 +1,7 @@
 package com.marin.mauricio.repository;
 
 import com.google.gson.Gson;
+import com.marin.mauricio.Constants;
 import com.marin.mauricio.repository.data.Instruction;
 import com.marin.mauricio.repository.data.Result;
 
@@ -10,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 public class DataRepositoryFileImpl implements DataRepository{
 
@@ -20,12 +22,20 @@ public class DataRepositoryFileImpl implements DataRepository{
         try{
             BufferedReader bufferedReader = new BufferedReader( new FileReader(source));
             Instruction instruction = gson.fromJson(bufferedReader, Instruction.class);
-            return instruction;
+            if(checkCommands(instruction.getCommands())){
+                return instruction;
+            }
+            System.out.println("Command list invalid");
         }
         catch (IOException e){
             System.out.println("File not found");
         }
         return null;
+    }
+
+    @Override
+    public boolean checkCommands(List<String> commands) {
+        return !commands.stream().anyMatch(command -> Constants.BACK.equals(command));
     }
 
     @Override

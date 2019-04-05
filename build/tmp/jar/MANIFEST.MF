@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Build-Timestamp: 2019-04-05T11:14:14.133-0500
-Built-By: Mauricio Marin Jimenez
-Build-OS: Windows 10 amd64 10.0
-Created-By: Gradle 4.10.3
-Build-Jdk: 1.8.0_111 (Oracle Corporation 25.111-b14)
-Main-Class: com.marin.mauricio.Main
-

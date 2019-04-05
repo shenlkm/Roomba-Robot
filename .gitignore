@@ -69,12 +69,14 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-
+bu
 # JetBrains templates
 **___jb_tmp___
 
 ### Intellij Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
+build/*
+!build/build.xml
 
 # *.iml
 # modules.xml
